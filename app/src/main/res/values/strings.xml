@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sample-android-npm</string>
+    <string name="start_process">¡Probar!</string>
+    <string name="start_title">Demo del SDK en WebView</string>
+</resources>
