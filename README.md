@@ -1,4 +1,4 @@
-# Sample SDK WebView - Android
+# Sample SDK NPM - Android
 
 Este proyecto Android demuestra cómo integrar el SDK de VeriDocID en una aplicación nativa de Android usando un `WebView`. Para esta demo el proceso de verificación se inicia desde una pantalla inicial con un botón, y luego se ejecutan llamadas a la API para crear una verificación y obtener la URL del SDK, la cual se despliega dentro del WebView.
 
@@ -37,7 +37,21 @@ Este proyecto Android demuestra cómo integrar el SDK de VeriDocID en una aplica
 ## 🛡️ Permisos
 
 El flujo solicita el permiso de cámara al capturar los documentos y el rostro lo que se maneja mediante la nueva API (`ActivityResultContracts.RequestPermission`).
-**Nota**: Si el usuario niega el permiso, se muestra un `Toast`, pero se pueden extender este comportamiento para volver a solicitar el permiso si lo desean.
+
+> **Nota**: Si el usuario niega el permiso, se muestra un `Toast`, pero se pueden extender este comportamiento para volver a solicitar el permiso si lo desean.
+
+## 📦 Dependencias principales
+
+```bash
+# versions
+okhttp = "4.12.0"
+coroutines = "1.7.3"
+
+# libs.versions.toml
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
+```
+
 
 ## 📝 Notas adicionales
 
